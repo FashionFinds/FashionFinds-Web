@@ -1,0 +1,10 @@
+<tr>
+                <td>1</td>
+                <td>Mango</td>
+                <td>Image</td>
+                <td>100</td>
+                <td>1</td>
+                <td>true</td>
+                <td><a href='' class='text-light'><i class='fa-solid fa-pen-to-square '></i></a></td>
+                <td><a href='' class='text-light'><i class='fa-solid fa-trash'></i></a></td>
+            </tr>
