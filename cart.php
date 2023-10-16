@@ -176,7 +176,9 @@ include('functions/common_funk.php');
                             <td><img src="./images/<?php echo $image?>"  class="cart_image"></td>
                             <td><input type="text" name="quantity"></td>
                             <td><?php echo $price ?> </td>
-                            <td><input type="checkbox"></td>
+			    <td><input type="checkbox"name='remove' value='
+				<?php echo $product_id ?>'
+></td>
                             <td>
                                 <input type="submit" Value="Update cart" class="bg-info  mx-2 border-0 text-light" name="update_cart" >
                                 <input type="submit" Value="Remove cart" class="bg-info  mx-2 border-0 text-light" name="remove_cart" >
