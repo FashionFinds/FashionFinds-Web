@@ -203,7 +203,7 @@ include('functions/common_funk.php');
     </div>
 <!-- last child -->
       <div class="bg-info text-center p-3">
-        <p>All rights reserved Designed by Danish 2023  </p>
+        <p>All rights reserved Designed by FashionFinds 2023   </p>
       </div>
 
          <!-- bootstrap js link -->
