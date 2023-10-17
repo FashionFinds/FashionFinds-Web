@@ -179,7 +179,7 @@ include('functions/common_funk.php');
                             <td><img src="./images/<?php echo $image?>"  class="cart_image"></td>
                             <td><input type="text" name="quantity"></td>
                             <td><?php echo $price ?> </td>
-			    <td><input type="checkbox"name='remove' value='
+			    <td><input type="checkbox"name='remove[]' value='
 				<?php echo $product_id ?>'
 ></td>
                             <td>
@@ -206,6 +206,30 @@ include('functions/common_funk.php');
              </form>   
         </div>
     </div>
+
+<?php 
+  function remove_item(){
+    global $con;
+    if(isset($_POST['remove_cart']))
+    {
+      foreach($_POST['remove'] as $removeid)
+      {
+        echo $removeid;
+        $q = "Delete from `cart_detail` where product_id=$removeid";
+        $r = mysqli_query($con, $q);
+        if($r)
+        {
+          echo "<script>window.open('cart.php', '_self')</script>";
+        }
+      }
+    }
+  }
+
+  remove_item();
+?>
+
+
+
 <!-- last child -->
       <div class="bg-info text-center p-3">
         <p>All rights reserved Designed by FashionFinds 2023   </p>
