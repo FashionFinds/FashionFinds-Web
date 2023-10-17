@@ -145,7 +145,7 @@ include('functions/common_funk.php');
                        while($row=mysqli_fetch_assoc($result2))
                        {
                            $product_id=$row['product_id'];
-                           echo $product_id;
+                          //  echo $product_id;
                            $sql="select * from `product` where product_id=$product_id";
                            $result=mysqli_query($con,$sql);
                            while($data=mysqli_fetch_array($result))
@@ -163,11 +163,14 @@ include('functions/common_funk.php');
                                 if(isset($_POST['update_cart']))
                                 {
                                     $qtn=$_POST['quantity'];
-                                    echo " hii ";
-                                    echo $qtn ;
+                                    // echo " hii ";
+                                    // echo $qtn ;
+                        
 
-                                     $check1="update `cart_detail` set quantity=$qtn where ip_address='$ip'";
-                                    $result=mysqli_query($con,$check1);
+                                     $check1="update `cart_detail` set quantity=$'qtn' where ip_address='$ip'";
+                                    $result_a=mysqli_query($con,$check1);
+                                    $total = $total * (int)$qtn;
+                                    
                                 }
                                 
                             ?>
@@ -205,7 +208,7 @@ include('functions/common_funk.php');
     </div>
 <!-- last child -->
       <div class="bg-info text-center p-3">
-        <p>All rights reserved Designed by Danish 2023  </p>
+        <p>All rights reserved Designed by FashionFinds 2023   </p>
       </div>
 
          <!-- bootstrap js link -->
