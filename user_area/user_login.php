@@ -15,8 +15,8 @@ include('../functions/common_funk.php');
       crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid">
-        <h1 class="text-center">User Login </h1>
+    <div class="card bg-dark text-white py-5 container-fluid">
+        <h1 class="text-center py-5 h-100">User Login </h1>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-12 col-xl-6">
                     <form action="" method="post" >
@@ -33,8 +33,8 @@ include('../functions/common_funk.php');
                         autocomplete="off" required="required" name="user_password">
                     </div>
                     <div >
-                        <input type="submit" value="Log in" class="bg-info py-2 px-3 border-0" name="user_login">
-                        <p class="small fw-bold mt-2 pt-2 mb-5">Don't have an account ? <a href="user_register.php" class="text-danger">Register</a></p>
+                        <input type="submit" value="Log in" class="btn btn-primary btn-block mb-4" name="user_login">
+                        <p class="small fw-bold mt-2 pt-2 mb-5 text-center">Don't have an account ? <a href="user_register.php" class="text-danger">Register</a></p>
                     </div>
                     </form>
             </div>
