@@ -183,7 +183,7 @@ include('functions/common_funk.php');
 				<?php echo $product_id ?>'
 ></td>
                             <td>
-                                <input type="submit" Value="Update cart" class="bg-info  mx-2 border-0 text-light" name="update_cart" >
+                                <input style="margin:10px" type="submit" Value="Update cart" class="bg-info  mx-2 border-0 text-light" name="update_cart" >
                                 <input type="submit" Value="Remove cart" class="bg-info  mx-2 border-0 text-light" name="remove_cart" >
                             </td>
                         </tr>
