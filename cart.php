@@ -231,9 +231,7 @@ include('functions/common_funk.php');
 
 
 <!-- last child -->
-      <div class="bg-info text-center p-3">
-        <p>All rights reserved Designed by FashionFinds 2023   </p>
-      </div>
+      
 
          <!-- bootstrap js link -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
