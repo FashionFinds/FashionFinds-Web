@@ -244,8 +244,8 @@
                             <h5 class='card-title'>$product_title</h5>
                             <p class='card-text'>$product_description</p>
                             <p > price: $product_price/. </p>
-                            <a href='index.php?add_to_card=$product_id' class='btn btn-info'>Add to card</a>
-                            <a href='index.php' class='btn btn-secondary'>Go home</a>
+                            <a  href='index.php?add_to_card=$product_id' class='btn btn-info p-3'>Add to Cart</a>
+                            <a href='index.php' class='btn btn-secondary p-3'>Go home</a>
                         </div>
                         </div>
                         </div>
@@ -297,7 +297,7 @@ function card_function()
             $sql1="insert into `cart_detail` (product_id,ip_address,quantity,price)
             values ($product_id,'$ip',0,'$price')";
             $result1=mysqli_query($con,$sql1);
-            echo "<script>alert('Item is added int the cart ')</script>";
+            // echo "<script>alert('Item is added int the cart ')</script>";
             echo "<script>window.open('index.php','_self')</script>";
         }
         else 
