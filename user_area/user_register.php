@@ -20,14 +20,15 @@ function getUserIpAddr(){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FasionFinds</title>
+<link rel="icon" href="../../shopping-cart.png">
      <!-- bootstrap css link -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid py-5 bg-dark text-light">
         <h1 class="text-center">New User Registration</h1>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-12 col-xl-6">
@@ -44,12 +45,7 @@ function getUserIpAddr(){
                         <input type="text" id="user_mail" class="form-control" placeholder="Enter your Email" 
                         autocomplete="off" required="required" name="user_mail">
                     </div>
-                     <!-- user image  -->
-                     <div class="form-online mb-3">
-                        <label for="user_image" class="form-label1" >User Image </label>
-                        <input type="file" id="user_image" class="form-control" 
-                         required="required" name="user_image">
-                    </div>
+                    
                      <!-- user password  -->
                      <div class="form-online mb-3">
                         <label for="user_password" class="form-label1" >Password </label>
@@ -76,7 +72,7 @@ function getUserIpAddr(){
                     </div>
                        
                     <div >
-                        <input type="submit" value="Register" class="bg-info py-2 px-3 border-0" name="user_register">
+                        <input type="submit" value="Register" class="bg-info py-2 px-3 border-0 btn btn-primary text-dark" name="user_register">
                         <p class="small fw-bold mt-2 pt-2 mb-5">Allready have an account ? <a href="user_login.php" class="text-danger">Login</a></p>
                     </div>
                     </form>
