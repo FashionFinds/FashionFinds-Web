@@ -27,7 +27,7 @@
                         <h5 class='card-title'>$product_title</h5>
                         <p class='card-text'>$product_description</p>
                         <p > price: $product_price/. </p>
-                        <a href='index.php?add_to_card=$product_id' class='btn btn-info'>Add to card</a>
+                        <a href='index.php?add_to_card=$product_id' class='btn btn-info'>Add to cart</a>
                         <a href='product_detail.php?product_id=$product_id' class='btn btn-secondary'>View more</a>
                     </div>
                     </div> 
